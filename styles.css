@@ -12,6 +12,9 @@
 	--radius:12px;
 	--gap:1rem;
 }
+html {
+  font-size: 16px;
+}
 html,body{height:100%}
 body{
 	font-family: 'Montserrat', sans-serif;

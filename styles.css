@@ -46,7 +46,7 @@ main{min-height:100vh}
 }
 .hero-content{ text-align:left }
 .hero-content h1{
-	font-size:clamp(4.25rem,6vw,4.25rem);
+	font-size:clamp(2.8rem, 5vw, 4.25rem);
 	line-height:0.98;
 	margin-bottom:0.35rem;
 	text-transform:uppercase;
@@ -153,7 +153,6 @@ main{min-height:100vh}
 	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;
 	background-size:cover;
 	background-position:center;
-	background-attachment:fixed;
 	color:var(--text);
 }
 .about .section-title{
@@ -222,7 +221,7 @@ main{min-height:100vh}
 
 /* SERVICES */
 .services{padding:4rem 1.25rem;min-height:100vh;display:flex;align-items:center; /* use same full-bleed background as About */
-	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;background-attachment:fixed;color:var(--text)}
+	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;color:var(--text)}
 .services .section-title{margin-bottom:2.25rem;color:var(--hero-green); font-size: 3.25rem; }
 .services .lead{max-width:78ch;margin:0.35rem auto 1.5rem;color:var(--muted);text-align:center}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;align-items:stretch}
@@ -236,7 +235,7 @@ main{min-height:100vh}
 
 /* WHY CHOOSE ME SECTION */
 .why-choose{padding:4rem 1.25rem;min-height:100vh;display:flex;align-items:center; /* use same full-bleed background as About */
-	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;background-attachment:fixed;color:var(--text)}
+	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;color:var(--text)}
 .why-choose .section-title{margin-bottom:0.35rem;color:var(--hero-green); font-size:3.25rem;letter-spacing:2px;position:relative;text-align:center}
 .why-choose .section-title::after{
 	content:"";
@@ -261,7 +260,7 @@ main{min-height:100vh}
 
 /* CONTACT */
 .contact{padding:4rem 1.25rem;min-height:100vh;display:flex;align-items:center; /* use same full-bleed background as About */
-	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;background-attachment:fixed;color:var(--text)}
+	background:linear-gradient(180deg, rgba(6,8,10,0.6), rgba(6,8,10,0.6)), url('assets/hero.jpg') center/cover no-repeat;background-size:cover;background-position:center;color:var(--text)}
 .contact .section-title{color:var(--hero-green);text-align:center;font-size:2.5rem;margin-bottom:0.5rem}
 .contact .lead{max-width:78ch;margin:0.5rem auto 1.5rem;color:var(--muted);text-align:center}
 .contact-form{max-width:900px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
@@ -295,3 +294,10 @@ main{min-height:100vh}
 
 .side-nav .nav-icon{width:28px;height:28px;display:block}
 .side-nav .nav-item img{filter:none}
+
+/* Apply fixed background ONLY to hero on large screens */
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}

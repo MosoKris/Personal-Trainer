@@ -8,7 +8,7 @@
 	--text:#f8fafc;
 	--muted:rgba(248,250,252,0.8);
 	--hero-green:#7ed957;
-	--max-w:1100px;
+	--max-w:1200px;
 	--radius:12px;
 	--gap:1rem;
 }
@@ -33,7 +33,7 @@ main{min-height:100vh}
 /* HERO - two column layout */
 #hero{
 	min-height:100vh;
-	padding:3rem 1.25rem;
+	padding:2.25rem 1.25rem;
 	position:relative;
 	background:linear-gradient(135deg, rgba(10,12,16,0.55), rgba(5,8,12,0.55)), url('assets/hero.jpg') center/cover no-repeat;
 }
@@ -128,7 +128,7 @@ main{min-height:100vh}
 
 
 /* Container utility */
-.container{max-width:var(--max-w);margin:0 auto;padding:0 1rem}
+.container{max-width:var(--max-w);margin:0 auto;}
 
 /* Responsive tweaks */
 @media (max-width:600px){

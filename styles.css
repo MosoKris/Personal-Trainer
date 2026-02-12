@@ -27,7 +27,7 @@ body{
 	line-height:1.45;
 	overflow-x:hidden;
 	min-width:320px;
-	border: 10px solid red !important;
+	
 }
 
 /* Headings use League Spartan for a bold display */
@@ -300,3 +300,6 @@ main{min-height:100vh}
 .side-nav .nav-icon{width:28px;height:28px;display:block}
 .side-nav .nav-item img{filter:none}
 
+#hero {
+  outline: 8px solid red !important;
+}

@@ -26,6 +26,7 @@ body{
 	-moz-osx-font-smoothing:grayscale;
 	line-height:1.45;
 	overflow-x:hidden;
+	min-width:320px;
 }
 
 /* Headings use League Spartan for a bold display */
@@ -57,7 +58,7 @@ main{min-height:100vh}
 	letter-spacing:1px;
 }
 .hero-content h3{
-	font-size:clamp(2rem,2.2vw,1.35rem);
+	font-size:clamp(1.35rem, 2.2vw, 2rem);
 	margin-bottom:0.5rem;
 	font-weight:800;
 	color:var(--text);

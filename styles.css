@@ -96,6 +96,74 @@ p {
 /* =========================
    HERO SECTION
 ========================= */
+.trainer-border {
+  position: relative;
+  padding: 14px;
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(126,217,87,0.55),
+      rgba(126,217,87,0.15)
+    );
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.trainer-border::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 18px;
+  background: rgba(12,18,22,0.92);
+  z-index: 0;
+}
+
+
+.trainer-border img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.trainer-border::after {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 28px;
+  background: radial-gradient(
+    circle,
+    rgba(126,217,87,0.22),
+    transparent 65%
+  );
+  filter: blur(26px);
+  z-index: -1;
+}
+
+
+@media (hover: hover) {
+  .trainer-border {
+    transition: transform 0.35s ease;
+  }
+
+  .trainer-border:hover {
+    transform: translateY(-6px);
+  }
+}
+
+
+
+
 #hero {
   min-height: 100vh;
   padding: var(--section-pad) 1.25rem;
@@ -139,7 +207,7 @@ p {
 
 .hero-image img {
   width: 100%;
-  height: clamp(420px, 55vh, 640px);
+  height: clamp(620px, 55vh, 640px);
   object-fit: cover;
   border-radius: var(--radius);
 }
